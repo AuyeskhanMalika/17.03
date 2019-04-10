@@ -13,9 +13,9 @@ namespace modul15
         {
                 Person person = new Person()
                 {
-                    Name = "Muratzhan",
+                    Name = "Malika",
                     Age = 16,
-                    City = "Nursultan"
+                    City = "Astana"
                 };
                 Type type = typeof(Person);
                 Console.WriteLine("Тип: " + type.Name);
