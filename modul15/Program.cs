@@ -11,15 +11,21 @@ namespace modul15
     {
         static void Main(string[] args)
         {
-            Type console = typeof(Console);
-            MethodInfo[] methods = console.GetMethods();
-            Console.WriteLine("Список методов класса Console: \n");
-            foreach (MethodInfo m in methods)
-            {
-                Console.Write(m.ReturnType.Name + "\t" + m.Name);
-                Console.Write("\n");
-            }
-            Console.ReadLine();
-        }
-    }
+                Person person = new Person()
+                {
+                    Name = "Muratzhan",
+                    Age = 16,
+                    City = "Nursultan"
+                };
+                Type type = typeof(Person);
+                Console.WriteLine("Тип: " + type.Name);
+                PropertyInfo[] properties = type.GetProperties();
+                Console.WriteLine("Методы: ");
+                foreach (var property in properties)
+                {
+                    Console.WriteLine(property.PropertyType + ":\t" + property.Name);
+                }
+                Console.Read();
+         }
+     }
 }
