@@ -14,7 +14,7 @@ namespace modul15
                 Person person = new Person()
                 {
                     Name = "Malika",
-                    Age = 16,
+                    Age = 18,
                     City = "Astana"
                 };
                 Type type = typeof(Person);
